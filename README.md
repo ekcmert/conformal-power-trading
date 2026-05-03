@@ -105,4 +105,4 @@ Most run scripts contain `RUN_*` switches and configuration constants at the top
 
 ## Notes
 
-Generated data, predictions, logs, and results can be large and are stored under `data/` and `results/`. Some runner scripts contain local paths for selected experiment outputs; update these paths when moving the project to another machine.
+Generated data, predictions, logs, and results can be large and are stored under `data/` and `results/`. Some runner scripts contain local paths for selected experiment outputs; update these paths when moving the project to another machine. Zipped "results" and "data" folders can be accessed from the link: drive.google.com/drive/folders/1oeNHnu2h55hxNt-WRL4jpZxRzJncQLLv
