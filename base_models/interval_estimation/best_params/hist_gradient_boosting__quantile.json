@@ -1,0 +1,44 @@
+{
+  "best_params": {
+    "learning_rate": 0.02,
+    "loss": "quantile",
+    "max_iter": 400,
+    "max_leaf_nodes": 63,
+    "min_samples_leaf": 100,
+    "random_state": 42
+  },
+  "display_name": "HistGradientBoosting | quantile",
+  "model_name": "hist_gradient_boosting",
+  "objective_name": "quantile",
+  "params_summary": "{'learning_rate': 0.02, 'loss': 'quantile', 'max_iter': 400, 'max_leaf_nodes': 63, 'min_samples_leaf': 100, 'quantiles': [0.05, 0.95], 'random_state': 42}",
+  "pipeline": "interval_estimation",
+  "quantiles": [
+    0.05,
+    0.95
+  ],
+  "results_dir": "C:\\Users\\mert.ekici\\Desktop\\CPT\\results\\tuning\\interval_estimation\\mcp_models",
+  "targets": [
+    "DE Price Spot EUR/MWh EPEX H Actual"
+  ],
+  "test_year": 2026,
+  "tuning": {
+    "active": true,
+    "budget_label": "interval-hist-gradient-boosting",
+    "duplicate_suggestions": 1,
+    "early_stopped": true,
+    "global_n_trials_cap": 24,
+    "global_patience_cap": 10,
+    "group_n_trials": 10,
+    "group_patience": 5,
+    "metric_name": "mean_pinball_loss",
+    "metric_value": 1.6100518779011668,
+    "months": 6,
+    "n_trials": 10,
+    "patience": 5,
+    "successful_trials": 6,
+    "trial_budget": 10,
+    "trials_sampled": 6,
+    "validation_end": "2025-12-31 23:00:00+00:00",
+    "validation_start": "2025-07-01 00:00:00+00:00"
+  }
+}

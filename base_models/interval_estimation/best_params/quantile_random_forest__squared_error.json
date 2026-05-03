@@ -1,0 +1,46 @@
+{
+  "best_params": {
+    "criterion": "squared_error",
+    "max_depth": 20,
+    "max_features": "sqrt",
+    "max_samples": null,
+    "min_samples_leaf": 4,
+    "n_estimators": 320,
+    "n_jobs": -1,
+    "random_state": 42
+  },
+  "display_name": "Quantile Random Forest | squared_error",
+  "model_name": "quantile_random_forest",
+  "objective_name": "squared_error",
+  "params_summary": "{'criterion': 'squared_error', 'interval_construction': 'tree-wise empirical quantiles', 'max_depth': 20, 'max_features': 'sqrt', 'max_samples': None, 'min_samples_leaf': 4, 'n_estimators': 320, 'n_jobs': -1, 'quantiles': [0.05, 0.95], 'random_state': 42}",
+  "pipeline": "interval_estimation",
+  "quantiles": [
+    0.05,
+    0.95
+  ],
+  "results_dir": "C:\\Users\\mert.ekici\\Desktop\\CPT\\results\\tuning\\interval_estimation\\mcp_models",
+  "targets": [
+    "DE Price Spot EUR/MWh EPEX H Actual"
+  ],
+  "test_year": 2026,
+  "tuning": {
+    "active": true,
+    "budget_label": "interval-tree-ensemble",
+    "duplicate_suggestions": 0,
+    "early_stopped": false,
+    "global_n_trials_cap": 24,
+    "global_patience_cap": 10,
+    "group_n_trials": 7,
+    "group_patience": 4,
+    "metric_name": "mean_pinball_loss",
+    "metric_value": 1.4771495867159252,
+    "months": 6,
+    "n_trials": 7,
+    "patience": 4,
+    "successful_trials": 7,
+    "trial_budget": 7,
+    "trials_sampled": 7,
+    "validation_end": "2025-12-31 23:00:00+00:00",
+    "validation_start": "2025-07-01 00:00:00+00:00"
+  }
+}

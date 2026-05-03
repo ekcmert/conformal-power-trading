@@ -1,0 +1,50 @@
+{
+  "best_params": {
+    "colsample_bytree": 0.6,
+    "learning_rate": 0.02,
+    "max_depth": 3,
+    "min_child_weight": 5,
+    "n_estimators": 600,
+    "n_jobs": -1,
+    "objective": "reg:quantileerror",
+    "random_state": 42,
+    "reg_lambda": 5.0,
+    "subsample": 1.0,
+    "tree_method": "hist",
+    "verbosity": 0
+  },
+  "display_name": "XGBoost | reg:quantileerror",
+  "model_name": "xgboost",
+  "objective_name": "reg_quantileerror",
+  "params_summary": "{'colsample_bytree': 0.6, 'learning_rate': 0.02, 'max_depth': 3, 'min_child_weight': 5, 'n_estimators': 600, 'n_jobs': -1, 'objective': 'reg:quantileerror', 'quantiles': [0.05, 0.95], 'random_state': 42, 'reg_lambda': 5.0, 'subsample': 1.0, 'tree_method': 'hist', 'verbosity': 0}",
+  "pipeline": "interval_estimation",
+  "quantiles": [
+    0.05,
+    0.95
+  ],
+  "results_dir": "C:\\Users\\mert.ekici\\Desktop\\CPT\\results\\tuning\\interval_estimation\\mcp_models",
+  "targets": [
+    "DE Price Spot EUR/MWh EPEX H Actual"
+  ],
+  "test_year": 2026,
+  "tuning": {
+    "active": true,
+    "budget_label": "interval-xgboost",
+    "duplicate_suggestions": 14,
+    "early_stopped": true,
+    "global_n_trials_cap": 24,
+    "global_patience_cap": 10,
+    "group_n_trials": 18,
+    "group_patience": 8,
+    "metric_name": "mean_pinball_loss",
+    "metric_value": 1.633903671352252,
+    "months": 6,
+    "n_trials": 18,
+    "patience": 8,
+    "successful_trials": 13,
+    "trial_budget": 18,
+    "trials_sampled": 13,
+    "validation_end": "2025-12-31 23:00:00+00:00",
+    "validation_start": "2025-07-01 00:00:00+00:00"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "best_params": {
+    "allow_writing_files": false,
+    "depth": 6,
+    "iterations": 600,
+    "l2_leaf_reg": 8.0,
+    "learning_rate": 0.03,
+    "loss_function": "Quantile:alpha=0.5",
+    "random_seed": 42,
+    "rsm": 0.8,
+    "thread_count": -1,
+    "verbose": false
+  },
+  "display_name": "CatBoost | quantile_p50",
+  "model_name": "catboost",
+  "objective_name": "quantile_p50",
+  "params_summary": "{'allow_writing_files': False, 'depth': 6, 'iterations': 600, 'l2_leaf_reg': 8.0, 'learning_rate': 0.03, 'loss_function': 'Quantile:alpha=0.5', 'random_seed': 42, 'rsm': 0.8, 'thread_count': -1, 'verbose': False}",
+  "pipeline": "point_estimation",
+  "results_dir": "C:\\Users\\mert.ekici\\Desktop\\CPT\\results\\tuning\\point_estimation\\mcp_models",
+  "targets": [
+    "DE Price Spot EUR/MWh EPEX H Actual"
+  ],
+  "test_year": 2026,
+  "tuning": {
+    "active": true,
+    "budget_label": "point-catboost-core",
+    "duplicate_suggestions": 7,
+    "early_stopped": true,
+    "global_n_trials_cap": 32,
+    "global_patience_cap": 12,
+    "group_n_trials": 15,
+    "group_patience": 6,
+    "metric_name": "mae",
+    "metric_value": 11.522477874027986,
+    "months": 6,
+    "n_trials": 15,
+    "patience": 6,
+    "successful_trials": 9,
+    "trial_budget": 15,
+    "trials_sampled": 9,
+    "validation_end": "2025-12-31 23:00:00+00:00",
+    "validation_start": "2025-07-01 00:00:00+00:00"
+  }
+}

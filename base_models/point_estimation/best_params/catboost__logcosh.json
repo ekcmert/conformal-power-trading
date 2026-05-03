@@ -1,0 +1,44 @@
+{
+  "best_params": {
+    "allow_writing_files": false,
+    "depth": 4,
+    "iterations": 1200,
+    "l2_leaf_reg": 8.0,
+    "learning_rate": 0.02,
+    "loss_function": "LogCosh",
+    "random_seed": 42,
+    "rsm": 0.9,
+    "thread_count": -1,
+    "verbose": false
+  },
+  "display_name": "CatBoost | logcosh",
+  "model_name": "catboost",
+  "objective_name": "logcosh",
+  "params_summary": "{'allow_writing_files': False, 'depth': 4, 'iterations': 1200, 'l2_leaf_reg': 8.0, 'learning_rate': 0.02, 'loss_function': 'LogCosh', 'random_seed': 42, 'rsm': 0.9, 'thread_count': -1, 'verbose': False}",
+  "pipeline": "point_estimation",
+  "results_dir": "C:\\Users\\mert.ekici\\Desktop\\CPT\\results\\tuning\\point_estimation\\mcp_models",
+  "targets": [
+    "DE Price Spot EUR/MWh EPEX H Actual"
+  ],
+  "test_year": 2026,
+  "tuning": {
+    "active": true,
+    "budget_label": "point-catboost-core",
+    "duplicate_suggestions": 1,
+    "early_stopped": true,
+    "global_n_trials_cap": 32,
+    "global_patience_cap": 12,
+    "group_n_trials": 15,
+    "group_patience": 6,
+    "metric_name": "mae",
+    "metric_value": 11.58853049297398,
+    "months": 6,
+    "n_trials": 15,
+    "patience": 6,
+    "successful_trials": 8,
+    "trial_budget": 15,
+    "trials_sampled": 8,
+    "validation_end": "2025-12-31 23:00:00+00:00",
+    "validation_start": "2025-07-01 00:00:00+00:00"
+  }
+}

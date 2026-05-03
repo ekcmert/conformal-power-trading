@@ -1,0 +1,48 @@
+{
+  "best_params": {
+    "allow_writing_files": false,
+    "depth": 5,
+    "iterations": 600,
+    "l2_leaf_reg": 8.0,
+    "learning_rate": 0.02,
+    "loss_function": "MultiQuantile",
+    "random_seed": 42,
+    "rsm": 0.9,
+    "thread_count": -1,
+    "verbose": false
+  },
+  "display_name": "CatBoost | MultiQuantile",
+  "model_name": "catboost",
+  "objective_name": "multiquantile",
+  "params_summary": "{'allow_writing_files': False, 'depth': 5, 'iterations': 600, 'l2_leaf_reg': 8.0, 'learning_rate': 0.02, 'loss_function': 'MultiQuantile', 'quantiles': [0.05, 0.95], 'random_seed': 42, 'rsm': 0.9, 'thread_count': -1, 'verbose': False}",
+  "pipeline": "interval_estimation",
+  "quantiles": [
+    0.05,
+    0.95
+  ],
+  "results_dir": "C:\\Users\\mert.ekici\\Desktop\\CPT\\results\\tuning\\interval_estimation\\mcp_models",
+  "targets": [
+    "DE Price Spot EUR/MWh EPEX H Actual"
+  ],
+  "test_year": 2026,
+  "tuning": {
+    "active": true,
+    "budget_label": "interval-catboost",
+    "duplicate_suggestions": 6,
+    "early_stopped": false,
+    "global_n_trials_cap": 24,
+    "global_patience_cap": 10,
+    "group_n_trials": 10,
+    "group_patience": 6,
+    "metric_name": "mean_pinball_loss",
+    "metric_value": 1.8380043862927686,
+    "months": 6,
+    "n_trials": 10,
+    "patience": 6,
+    "successful_trials": 10,
+    "trial_budget": 10,
+    "trials_sampled": 10,
+    "validation_end": "2025-12-31 23:00:00+00:00",
+    "validation_start": "2025-07-01 00:00:00+00:00"
+  }
+}

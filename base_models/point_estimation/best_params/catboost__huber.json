@@ -1,0 +1,44 @@
+{
+  "best_params": {
+    "allow_writing_files": false,
+    "depth": 4,
+    "iterations": 600,
+    "l2_leaf_reg": 3.0,
+    "learning_rate": 0.05,
+    "loss_function": "Huber:delta=20.0",
+    "random_seed": 42,
+    "rsm": 0.8,
+    "thread_count": -1,
+    "verbose": false
+  },
+  "display_name": "CatBoost | huber",
+  "model_name": "catboost",
+  "objective_name": "huber",
+  "params_summary": "{'allow_writing_files': False, 'depth': 4, 'iterations': 600, 'l2_leaf_reg': 3.0, 'learning_rate': 0.05, 'loss_function': 'Huber:delta=20.0', 'random_seed': 42, 'rsm': 0.8, 'thread_count': -1, 'verbose': False}",
+  "pipeline": "point_estimation",
+  "results_dir": "C:\\Users\\mert.ekici\\Desktop\\CPT\\results\\tuning\\point_estimation\\mcp_models",
+  "targets": [
+    "DE Price Spot EUR/MWh EPEX H Actual"
+  ],
+  "test_year": 2026,
+  "tuning": {
+    "active": true,
+    "budget_label": "point-catboost-robust",
+    "duplicate_suggestions": 19,
+    "early_stopped": false,
+    "global_n_trials_cap": 32,
+    "global_patience_cap": 12,
+    "group_n_trials": 12,
+    "group_patience": 5,
+    "metric_name": "mae",
+    "metric_value": 12.466243060352395,
+    "months": 6,
+    "n_trials": 12,
+    "patience": 5,
+    "successful_trials": 12,
+    "trial_budget": 12,
+    "trials_sampled": 12,
+    "validation_end": "2025-12-31 23:00:00+00:00",
+    "validation_start": "2025-07-01 00:00:00+00:00"
+  }
+}

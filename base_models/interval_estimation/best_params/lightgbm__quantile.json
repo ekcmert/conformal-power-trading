@@ -1,0 +1,50 @@
+{
+  "best_params": {
+    "colsample_bytree": 0.6,
+    "importance_type": "gain",
+    "learning_rate": 0.02,
+    "min_child_samples": 60,
+    "n_estimators": 600,
+    "n_jobs": -1,
+    "num_leaves": 31,
+    "objective": "quantile",
+    "random_state": 42,
+    "reg_lambda": 0.0,
+    "subsample": 1.0,
+    "verbosity": -1
+  },
+  "display_name": "LightGBM | quantile",
+  "model_name": "lightgbm",
+  "objective_name": "quantile",
+  "params_summary": "{'colsample_bytree': 0.6, 'importance_type': 'gain', 'learning_rate': 0.02, 'min_child_samples': 60, 'n_estimators': 600, 'n_jobs': -1, 'num_leaves': 31, 'objective': 'quantile', 'quantiles': [0.05, 0.95], 'random_state': 42, 'reg_lambda': 0.0, 'subsample': 1.0, 'verbosity': -1}",
+  "pipeline": "interval_estimation",
+  "quantiles": [
+    0.05,
+    0.95
+  ],
+  "results_dir": "C:\\Users\\mert.ekici\\Desktop\\CPT\\results\\tuning\\interval_estimation\\mcp_models",
+  "targets": [
+    "DE Price Spot EUR/MWh EPEX H Actual"
+  ],
+  "test_year": 2026,
+  "tuning": {
+    "active": true,
+    "budget_label": "interval-lightgbm",
+    "duplicate_suggestions": 7,
+    "early_stopped": true,
+    "global_n_trials_cap": 24,
+    "global_patience_cap": 10,
+    "group_n_trials": 20,
+    "group_patience": 8,
+    "metric_name": "mean_pinball_loss",
+    "metric_value": 1.5843183774904266,
+    "months": 6,
+    "n_trials": 20,
+    "patience": 8,
+    "successful_trials": 13,
+    "trial_budget": 20,
+    "trials_sampled": 13,
+    "validation_end": "2025-12-31 23:00:00+00:00",
+    "validation_start": "2025-07-01 00:00:00+00:00"
+  }
+}

@@ -1,0 +1,14 @@
+energyquantified==0.15.1
+holidays==0.92
+ipykernel==7.2.0
+lightgbm==4.6.0
+matplotlib==3.10.8
+numpy==2.4.3
+pandas==3.0.1
+optuna==4.8.0
+plotly==6.6.0
+pyarrow==23.0.1
+scikit-learn==1.8.0
+tqdm==4.67.1
+catboost==1.2.10
+xgboost==3.2.0

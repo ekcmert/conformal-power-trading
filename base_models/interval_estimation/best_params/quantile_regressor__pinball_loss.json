@@ -1,0 +1,41 @@
+{
+  "best_params": {
+    "alpha": 0.01,
+    "fit_intercept": true,
+    "solver": "highs"
+  },
+  "display_name": "QuantileRegressor | pinball loss",
+  "model_name": "quantile_regressor",
+  "objective_name": "pinball_loss",
+  "params_summary": "{'alpha': 0.01, 'fit_intercept': True, 'quantiles': [0.05, 0.95], 'solver': 'highs', 'standardization': 'global'}",
+  "pipeline": "interval_estimation",
+  "quantiles": [
+    0.05,
+    0.95
+  ],
+  "results_dir": "C:\\Users\\mert.ekici\\Desktop\\CPT\\results\\tuning\\interval_estimation\\mcp_models",
+  "targets": [
+    "DE Price Spot EUR/MWh EPEX H Actual"
+  ],
+  "test_year": 2026,
+  "tuning": {
+    "active": true,
+    "budget_label": "interval-linear-exhaustive",
+    "duplicate_suggestions": 3,
+    "early_stopped": false,
+    "global_n_trials_cap": 24,
+    "global_patience_cap": 10,
+    "group_n_trials": null,
+    "group_patience": null,
+    "metric_name": "mean_pinball_loss",
+    "metric_value": 2.180474628695193,
+    "months": 6,
+    "n_trials": 24,
+    "patience": 10,
+    "successful_trials": 5,
+    "trial_budget": 5,
+    "trials_sampled": 5,
+    "validation_end": "2025-12-31 23:00:00+00:00",
+    "validation_start": "2025-07-01 00:00:00+00:00"
+  }
+}

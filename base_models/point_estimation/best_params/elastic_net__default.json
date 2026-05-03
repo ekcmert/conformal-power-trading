@@ -1,0 +1,41 @@
+{
+  "best_params": {
+    "alpha": 0.01,
+    "l1_ratio": 0.2,
+    "max_iter": 3000,
+    "precompute": true,
+    "random_state": 42,
+    "selection": "random",
+    "tol": 0.001
+  },
+  "display_name": "Elastic Net",
+  "model_name": "elastic_net",
+  "objective_name": "",
+  "params_summary": "{'alpha': 0.01, 'l1_ratio': 0.2, 'max_iter': 3000, 'precompute': True, 'random_state': 42, 'selection': 'random', 'tol': 0.001}",
+  "pipeline": "point_estimation",
+  "results_dir": "C:\\Users\\mert.ekici\\Desktop\\CPT\\results\\tuning\\point_estimation\\mcp_models",
+  "targets": [
+    "DE Price Spot EUR/MWh EPEX H Actual"
+  ],
+  "test_year": 2026,
+  "tuning": {
+    "active": true,
+    "budget_label": "point-linear-exhaustive",
+    "duplicate_suggestions": 37,
+    "early_stopped": false,
+    "global_n_trials_cap": 32,
+    "global_patience_cap": 12,
+    "group_n_trials": null,
+    "group_patience": null,
+    "metric_name": "mae",
+    "metric_value": 20.900629372695157,
+    "months": 6,
+    "n_trials": 32,
+    "patience": 12,
+    "successful_trials": 8,
+    "trial_budget": 9,
+    "trials_sampled": 8,
+    "validation_end": "2025-12-31 23:00:00+00:00",
+    "validation_start": "2025-07-01 00:00:00+00:00"
+  }
+}
